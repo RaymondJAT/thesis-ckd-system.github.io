@@ -1,4 +1,6 @@
 document.addEventListener('DOMContentLoaded', function(){
+    const isNumeric = (input) => !isNaN(parseFloat(input)) && isFinite(input);
+
     const predictButton = document.getElementById('predict-button');
     var calculatorModal = new bootstrap.Modal(document.getElementById('calculatorModal')); 
     var resultsModal = new bootstrap.Modal(document.getElementById('resultsModal')); 
@@ -74,11 +76,18 @@ document.addEventListener('DOMContentLoaded', function(){
         let isValid = true;
 
         inputs.forEach((input) => {
-            if (input.value.trim() === '') {
+            const inputValue = input.value.trim();
+
+            if (inputValue === '') {
                 isValid = false;
                 input.classList.add('is-invalid');
+            } else if (!isNumeric(inputValue) && !['gender-form', 'hypertension-form', 'anemia-form', 'diabetesmellitus-form'].includes(input.id)) {
+                isValid = false;
+                input.classList.add('is-invalid');
+                input.setCustomValidity('Please enter a valid number.');
             } else {
-                input.classList.remove ('is-invalid');
+                input.classList.remove('is-invalid');
+                input.setCustomValidity('');
             }
         });
 
