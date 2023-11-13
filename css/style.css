@@ -262,7 +262,6 @@ section#causes .row p {
 
 #calculatorModal label{
     font-family: 'pt_sansregular';
-    /* text-transform: uppercase; */
     font-size: 14px;
 }
 
@@ -410,33 +409,33 @@ section#causes .row p {
 
 /* Customize the placeholder style */
 #albumin-form::placeholder {
-    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
-    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+    color: #999; 
+    opacity: 0.8; 
 }
 
 #bloodurea-form::placeholder {
-    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
-    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+    color: #999; 
+    opacity: 0.8; 
 }
 
 #serumcreatinine-form::placeholder {
-    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
-    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+    color: #999; 
+    opacity: 0.8; 
 }
 
 #sodium-form::placeholder {
-    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
-    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+    color: #999; 
+    opacity: 0.8; 
 }
 
 #potassium-form::placeholder {
-    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
-    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+    color: #999; 
+    opacity: 0.8; 
 }
 
 #calcium-form::placeholder {
-    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
-    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+    color: #999; 
+    opacity: 0.8; 
 }
 
 /* desktop version only */
@@ -464,9 +463,9 @@ section#causes .row p {
     }
 
     .orange-button {
-        padding: 7px 40px; /* Adjust padding for smaller screens */
-        font-size: 14px; /* Adjust font size for smaller screens */
-        height: 40px; /* Adjust height for smaller screens */
+        padding: 7px 40px;
+        font-size: 14px; 
+        height: 40px; 
     }
 
     section#causes{
