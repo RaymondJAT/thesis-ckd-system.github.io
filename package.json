@@ -1,0 +1,14 @@
+{
+  "name": "ml-system",
+  "version": "1.0.0",
+  "description": "",
+  "main": "kidney.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "RJAT",
+  "license": "ISC",
+  "dependencies": {
+    "@tensorflow/tfjs": "^4.12.0"
+  }
+}

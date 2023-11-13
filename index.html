@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="shortcut icon" href="img/pngwing.com.png"> 
+</head>
+
+<body>
+    <section id="navbar">
+        <nav class="navbar navbar-expand-lg navbar-light fixed-top">
+            <div class="container">
+                <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav m-auto">
+                        <li class="nav-item"><a href="#" class="nav-link active" aria-current="page">Home</a></li>
+                        <li class="nav-item"><a href="#stages" class="nav-link">Stages</a></li>
+                        <li class="nav-item"><a href="#causes" class="nav-link">Causes</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </section>
+
+    <!-- CKD section -->
+    <section class="CKD">
+        <div class="container-fluid" id="banner-container">
+            <div class="row" id="banner-row">
+                <div class="col-md-6" id="banner-col">
+                    <h1>The Chronic Kidney Disease Risk Detection</h1>
+                    <h3>Assess Your Risk of Chronic Kidney Disease</h3>
+
+                    <div class="columns text-center medium-6">
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#calculatorModal" role="button">
+                            <span class="smaller">CKD</span>
+                            <br>
+                            Risk Calculator
+                        </a>
+                    </div>
+                    
+                    <div class="columns text-center medium-6">
+                        <a href="#" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#kidneysModal" role="button">
+                            <span class="smaller">Learn more about</span>
+                            <br>
+                            Your Kidneys
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-md-6" id="banner-col2">
+                    <img src="img/kidney.png" alt="banner" class="img-fluid rounded mx-auto d-block">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- stages -->
+    <section id="stages" class="clearfix">
+        <h1 class="text-center wow fadeInDown" data-bs-delay="0.4s">
+            <span class="smaller">Facts &amp; Figures of</span>
+            <br>
+            Chronic Kidney Disease (CKD)
+        </h1>
+        <div class="row uncollapse stages-gfr" id="stages-container">
+            
+            <div class="col-md-6 text-center" id="stages-col1">
+                <div><img src="img/PNG_PICS/CKD-STAGES.png" class="wow fadeInLeft" data-bs-delay="0.4s" alt="CKD stages"></div>
+                <p class="wow fadeInUp" data-bs-delay="0.4s">Your kidneys' primary function is to filter and excrete waste products. To find out how well your kidneys are doing, we measure the quantity of waste that circulates in your blood.</p>
+            </div>
+
+            <div class="col-md-6 text-center" id="stages-col2">
+                <img src="img/PNG_PICS/GFR.png" class="wow fadeInRight" data-bs-delay="0.4s" alt="CKD stages">
+                <p class="wow fadeInUp" data-bs-delay="0.4s">This is a test used to check how well the kidneys are working by estimating how much waste is in your blood. The more waste products in your blood the lower the filtration rate.</p>
+                <div class="columns medium-2 small-0"></div>
+            </div>
+               
+            <div class="text-center">
+                <img src="img/icon.png" alt="Kidneys" class="kidneys img-fluid rounded mx-auto d-block wow fadeInUp" data-bs-delay="0.4s">
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- causes -->
+        <section id="causes">
+            <div class="container-fluid">
+                <h1 class="text-center pt-5 wow fadeInDown" data-bs-delay="0.4s">
+                    Causes
+                </h1>
+                    <div class="row gy-4 row-cols-1 row-cols-sm-2 row-cols-md-3">
+                        <div class="col text-center">
+                            <div class="inner text-center pt-3 mb-3 wow fadeInLeft" data-bs-delay="0.4s">
+                                <p >The two main causes of CKD are diabetes and hypertension, which are responsible for up to two-thirds of all cases.</p>
+                                <p>Immune and inherited causes, as well as other reasons, are responsible for the rest.</p>
+                            </div>
+                        </div>
+
+                        <div class="col text-center">
+                            <div class="inner wow fadeIn" data-bs-delay="1s"><img src="img/graph@2x.png" alt="img-fluid rounded mx-auto d-block CKD graph"></div>
+                        </div>
+                        
+                        <div class="col text-center">
+                            <div class="inner wow fadeInRight pt-3 mb-3" data-bs-delay="0.4s"><img src="img/graphlegend@2x.png" alt="img-fluid rounded mx-auto d-block CKD graph legend"></div>
+                        </div>
+                    </div>
+            </div>         
+    </section>
+    
+    <!-- footer -->
+    <footer id="footer" class="clearfix">
+        <h1 class="text-center">What's your risk of CKD?</h1>
+        <p class="text-center">
+           ASSESS YOUR RISK OF CHRONIC KIDNEY DISEASE to take the first step towards a healthier you.
+        </p>
+    </footer>
+
+    <!--calculator modal -->
+    <div class="modal fade" id="calculatorModal" tabindex="-1" aria-labelledby="calculatorModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <div class="row text-center intro-text">
+                        <h1>
+                            <img src="img/PNG_PICS/ckd-risk-assessment.png" class="col pt-5 text-center img-fluid" alt="riskassessment">
+                        </h1>
+                    </div>
+                    <!-- calculator form -->
+                    <section class="container my-2 box">
+                        <form id="risk-calculator-form" class="row g-3 p-3 needs-validation" novalidate>
+                            <div class="col-md-6 mb-3">
+                                <label for="gender-form" class="form-label">GENDER</label>
+                                <select class="form-select" id="gender-form" name="gender" required>
+                                    <option value="" disabled selected>Select Gender</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                                <div class="invalid-feedback">
+                                  Please select your gender.
+                                </div>
+                            </div>
+                
+                            <div class="col-md-6 mb-3">
+                                <label for="age-form" class="col-sm-5 col-form-label position-relative">AGE</label>
+                                    <input type="text" class="form-control" id="age-form" name="age" required>
+                                    <div class="invalid-feedback">
+                                        Age is required.
+                                    </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="albumin-form" class="col-sm-5 col-form-label position-relative">ALBUMIN (g/dL)</label>
+                                <input type="text" class="form-control" id="albumin-form" name="albumin" placeholder="3.2 - 4.5 g/dL" required>
+                                <div class="invalid-feedback">
+                                    Albumin is required.
+                                </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="bloodurea-form" class="col-sm-5 col-form-label position-relative">BUN (mg/dL)</label>
+                                    <input type="text" class="form-control" id="bloodurea-form" name="bloodurea" placeholder="8.37 - 24.69 mg/dL"required>
+                                    <div class="invalid-feedback">
+                                        Blood Urea is required.
+                                    </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="serumcreatinine-form" class="col-sm-5 col-form-label position-relative">CREATININE (mg/dL)</label>
+                                    <input type="text" class="form-control" id="serumcreatinine-form" name="serumcreatinine" placeholder="0.6 - 1.1 mg/dL" required>
+                                    <div class="invalid-feedback">
+                                        Serum Creatinine is required.
+                                    </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="sodium-form" class="col-sm-5 col-form-label position-relative">SODIUM (meq/L)</label>
+                                    <input type="text" class="form-control" id="sodium-form" name="sodium" placeholder="136 - 145 meq/L" required>
+                                    <div class="invalid-feedback">
+                                        Sodium is required.
+                                    </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="potassium-form" class="col-sm-5 col-form-label position-relative">POTASSIUM (meq/L)</label>
+                                    <input type="text" class="form-control" id="potassium-form" name="potassium" placeholder="3.5 - 5.1 meq/L" required>
+                                    <div class="invalid-feedback">
+                                        Potassium is required.
+                                    </div>
+                            </div>
+                            
+                            <div class="col-md-6 mb-3">
+                                <label for="calcium-form" class="col-sm-5 col-form-label position-relative">CALCIUM (mg/dL)</label>
+                                    <input type="text" class="form-control" id="calcium-form" name="calcium" placeholder="8.4 - 10.4 mg/dL" required>
+                                    <div class="invalid-feedback">
+                                        Calcium is required.
+                                    </div>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <label for="hypertension-form" class="col-sm-5 col-form-label position-relative">HYPERTENSION:</label>
+                                    <select class="form-select" id="hypertension-form" name="hypertension" required>
+                                        <option value="" disabled selected>Select</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                            </div>
+                            
+                            <div class="col-md-4 mb-3">
+                                <label for="diabetesmellitus-form" class="col-sm-5 col-form-label position-relative">DIABETES:</label>
+                                    <select class="form-select" id="diabetesmellitus-form" name="diabetesmellitus" required>
+                                        <option value=""disabled selected>Select</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                            </div>
+
+                            <div class="col-md-4 mb-3">
+                                <label for="anemia-form" class="col-sm-5 col-form-label position-relative">ANEMIA:</label>
+                                    <select class="form-select" id="anemia-form" name="anemia" required>
+                                        <option value=""disabled selected>Select</option>
+                                        <option value="yes">Yes</option>
+                                        <option value="no">No</option>
+                                    </select>
+                            </div>
+                            
+                            <div class="col-12 text-center mb-3 pt-3">
+                                 <button id="predict-button" class="orange-button"  type="submit">Detect</button>
+                            </div>
+                    </form>           
+                </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- kidney modal -->
+    <div class="modal fade" id="kidneysModal" tabindex="-1" aria-labelledby="kidneysModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+                    <div class="modal-body">
+                        <section>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <h1 class="text-center wow fadeInDown" data-bs-delay="0.4s"><img src="img/PNG_PICS/learn-kidneys.png" class="col text-center img-fluid" alt=""></h1>
+                            
+                            <!-- Learn More About your Kidneys Section --> 
+                            <section id="what_kidneys_do" class="more-about-kidneys">
+                            <div class="row header-row text-center">
+                                <div class="col-md-6 what-kidneys-do wow text-center fadeInLeft" data-bs-delay="0.8s">
+                                <img src="img/title-kidneyscando.png" class="text-center img-fluid" alt="Learn more about what kidneys do for your body" />
+                                <img class="padding-gap text-center img-fluid" src="img/diagram.png" alt="Prevents hair loss, keeps blood sugar normal" />
+                                </div>
+                                <div class="col-md-6 text-center">
+                                <img src="img/whatkidneysdo.png" class="text-center img-fluid wow fadeInRight" data-bs-delay="0.4s" alt="Rids of waste and extra water by making urine" />
+                                </div>
+                            </div>
+                            </section>
+                            
+                            <!-- Too Much Protien Section --> 
+                            <section class="too-much-protein wow fadeInUp" data-bs-delay="0.9s">
+                            <div class="row header-row text-center">
+                                <div class="columns small-12 pt-5">
+                                <img src="img/proteininurine.png" class="img-fluid" alt="">
+                                </div>
+                                
+                                <div class="columns small-12 pt-5 mb-3">
+                                <img src="img/death_heartattack.png" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            </section>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- results modal -->
+    <div class="modal fade" id="resultsModal" aria-hidden="true" aria-labelledby="resultsModalLabel" tabindex="-1">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+
+                <div class="modal-body">
+                    <div class="row">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        <h1 class="text-center title-padding">Your Result</h1>
+                      </div>
+
+                    <hr>
+                    <div id="image-container" class="text-center mt-2 mb-0">
+                        <!-- leave empty. for image result -->
+                    </div>
+                    <div class="row">
+                        <div class="col text-center">
+                            <div id="prediction-list"></div>
+                        </div>
+                    </div>
+                    <hr>
+
+                    <!-- what happens if my kidney fail -->
+                    <section id="treatment-option" class="some-options">
+                        <div class="text-center">
+                            <img src="img/title-kidneys_fail.png" class="wow fadeInDown" data-bs-delay="0.4s" alt="What happens if my kidney fails, here are some options">
+                        </div>
+                        <div class="text-center">
+                            <img class="arrow-split wow fadeInDown" data-bs-delay="0.6s" src="img/kidneys_fail_arrows.png" alt="What happens if my kidney fails, here are some options">
+                        </div>
+                        <div class="d-flex justify-content-center align-items-center flex-wrap">
+                            <div class="p-5 text-center mt-4"> 
+                                <img src="img/kidneys_fail_dialysis.png" alt="" class="img-fluid wow fadeInLeft" data-bs-delay="0.6s">
+                            </div>
+                            <div class="p-5 text-center mt-4"> 
+                                <img src="img/kidneys_fail_transplant.png" alt="" class="img-fluid wow fadeInRight" data-bs-delay="0.6s">
+                            </div>
+                        </div>
+                    </section>
+
+                    <!-- signs and symptoms -->
+                    <section id="signs-and-symptoms" class="signs-symptons">
+                        <div class="bottom-arrow">
+                        </div>
+                        <div class="text-center wow fadeInDown" data-bs-delay="0.8s">
+                        <img src="img/signs_symptoms.png" alt="Recognize the signs and symptoms" />
+                        </div>
+
+                        <div class="d-flex justify-content-center align-items-center flex-wrap">
+                            <div class=" p-2 text-center wow fadeInLeft" data-bs-delay="0.8s">
+                                <img src="img/signs_symptoms_1.png" alt="" class="img-fluid">
+                            </div>
+
+                            <div class="p-2 text-center">
+                                  <img src="img/signs_symptoms_2.png" alt="" class="img-fluid">
+                            </div>
+                        </div>
+                        
+                        <div class="text-center footer">
+                        <img src="img/signs_symptoms_3.png" alt="Recognize the signs and symptoms" class="img-fluid wow fadeIn" data-bs-delay="0.8s" />
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/kidney.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest/dist/tf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+</body>
+</html>

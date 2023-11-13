@@ -1,0 +1,552 @@
+@font-face {
+    font-family: 'antonioregular';
+    src: url("../fonts/antonio-regular-webfont.eot");
+    src: url("../fonts/antonio-regular-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/antonio-regular-webfont.woff2") format("woff2"),url("../fonts/antonio-regular-webfont.woff") format("woff"),url("../fonts/antonio-regular-webfont.ttf") format("truetype"),url("../fonts/antonio-regular-webfont.svg#antonioregular") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'pt_sansregular';
+    src: url("../fonts/PTS55F-webfont.eot");
+    src: url("../fonts/PTS55F-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/PTS55F-webfont.woff") format("woff"),url("../fonts/PTS55F-webfont.ttf") format("truetype"),url("../fonts/PTS55F-webfont.svg#pt_sansregular") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+@font-face {
+    font-family: 'pt_sansbold';
+    src: url("../fonts/PTS75F-webfont.eot");
+    src: url("../fonts/PTS75F-webfont.eot?#iefix") format("embedded-opentype"),url("../fonts/PTS75F-webfont.woff") format("woff"),url("../fonts/PTS75F-webfont.ttf") format("truetype"),url("../fonts/PTS75F-webfont.svg#pt_sansbold") format("svg");
+    font-weight: normal;
+    font-style: normal
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.navbar-light .navbar-toggler-icon{
+background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 0.75%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-nav{
+	margin-right: 0 !important;
+	padding-right: 100px;
+}
+
+.navbar{
+    padding: 20px;
+	background-color: #1e1613;
+	color: #fff !important;
+}
+.nav-item a{
+	color: #fff !important;
+    margin-left: 60px;
+    font-size: 15px;
+    font-weight: 600;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+
+.nav-item a:hover{
+    border-bottom: 2px solid white;
+}
+
+.nav-item {
+	padding-left: 10px;
+}
+.navbar-brand{
+	color: #fff !important;
+	padding-left: 10px;
+}
+#navbar button{
+	color: #fff !important;
+}
+
+.custom-toggler{
+    border: 1px solid #1e1613;
+}
+
+/* section CKD */
+#banner-container{
+	background-color: #1e1613;
+	color: #fff !important;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+#banner-row img{
+	max-width: 65%;
+	height: auto;
+	display: inline-block;
+	padding-left: 30px;
+}
+
+#banner-row a{
+	background-color: #c42a33!important;
+    border-radius: 7px;
+    padding: 7px 80px;
+    text-transform: uppercase;
+    font-family: 'pt_sansbold';
+    letter-spacing: 1.3px;
+    font-size: 16px;
+    display: inline-block;
+	color: #fff !important;
+	border: 2px solid #c42a33;
+	margin-left: 20px;
+	margin-top: 20px; 
+}
+
+#banner-row h1{
+	padding-left: 20px;
+	padding-top: 20px;
+	text-align: center;
+    text-transform: uppercase;
+    font-family: 'antonioregular';
+}
+
+#banner-row h3{
+    padding-left: 20px;
+    padding-bottom: 20px;
+	text-align: center;
+    text-transform: uppercase;
+    font-family: 'antonioregular';
+}
+
+#banner-col{
+	padding-left: 20px;
+}
+    
+
+/* stages */
+section#stages{
+    background: #e8e4c9;
+    margin-top: -20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+section#stages p {
+    font-size: 18px;
+    line-height: 24px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    color: #1e1613;
+}
+
+section#stages h1 .smaller{
+    color: #c42a33;
+}
+
+section#stages h1 {
+    font-family: 'antonioregular';
+    font-size: 46px;
+    text-transform: uppercase;
+    line-height: 50px;
+    letter-spacing: 5px;
+    color: #1e1613;
+    margin-bottom: 60px
+}
+
+section#stages h1 .smaller {
+    font-size: 25px
+}
+
+.smaller{
+    font-family: 'pt_sansregular';
+    font-size: 13px;
+    letter-spacing: 1.6px
+}
+
+section#stages img{
+    height: auto;
+    
+}
+
+section#stages .row.stages-gfr {
+    margin: 0 auto;
+    max-width: 850px
+}
+
+.too-much-protein .header-row .columns {
+    margin-bottom: 70px; 
+}
+
+.row .row{
+    margin: 0;
+}
+
+/* footer */
+footer{
+    font-family: 'antonioregular';
+    text-transform: uppercase;
+    background: #1e1613;
+    position: relative;
+    margin-top: -70px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+footer p{
+    font-size: 20px;
+    letter-spacing: 2.5px;
+}
+
+#footer h1{
+    font-size:50px;
+    letter-spacing: 1.5px;
+}
+
+/* causes */
+section#causes p, 
+section#causes img{
+    max-width: 100%;
+}
+
+section#causes{
+    background-color: #e8e4c9;
+    z-index: 2;
+    padding: 150px;
+}
+
+section#causes h1 {
+    text-transform: uppercase;
+    font-family: 'antonioregular';
+    font-size: 55px;
+    letter-spacing: 3.2px;
+    margin: 0;
+    padding: 0;
+    padding-top: 70px;
+    margin-top: -120px;
+    height: 120px;
+    margin-bottom: 50px;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    color: #1e1613;
+}
+
+section#causes .row p {
+    font-size: 18px;
+    line-height: 24px;
+    color: #1e1613
+}
+
+.btn-close{
+    color: #aaa;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: bold;
+    line-height: 1;
+    position: absolute;
+    top: 0.625rem;
+    right: 1.375rem
+}
+
+#kidneysModal .btn-close{
+    position: absolute;
+    top: 10px;
+    right: 60px;
+    z-index: 20
+}
+
+#calculatorModal{
+    padding: 0;
+    margin: 0;
+}
+
+#calculatorModal label{
+    font-family: 'pt_sansregular';
+    /* text-transform: uppercase; */
+    font-size: 14px;
+}
+
+#calculatorModal .modal-header{
+    background: #182c25;
+    height: 50px;
+}
+
+#calculatorModal .modal-body{
+    background: #e8e4c9;
+    padding-bottom: 50px;
+}
+
+#calculatorModal label{
+    color: #0C5B5B;
+}
+
+#calculatorModal .intro-text p{
+    color:#0C5B5B;
+    font-size: 18px;
+}
+
+#calculatorModal .smaller{
+    font-family: 'pt_sansregular';
+    font-size: 25px;
+    letter-spacing: 2.5px;
+    line-height: 18px;
+}
+
+#calculatorModal h1{
+    background-color: #e8e4c9;
+    font-size: 71px;
+    color: #1e1613;
+    font-family: 'antonioregular';
+    text-transform: uppercase;
+    margin: 0;
+}
+
+#risk-calculator-form select, #risk-calculator-form input {
+    height: 50px;
+}
+
+.orange-button {
+    margin: -20px;
+    background: #c42a33;
+    border: 2px solid #c42a33;
+    border-radius: 7px;
+    padding: 7px 80px;
+    text-transform: uppercase;
+    font-family: 'pt_sansbold';
+    letter-spacing: 1.5px;
+    font-size: 16px;
+    height: 50px;
+    display: inline-block;
+    color: #fff;
+}
+
+.box{
+    max-width: 60%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+#kidneysModal .modal-body, .modal-header{
+    background: #e8e4c9;
+}
+
+#kidneysModal h1 {
+    font-size: 61px;
+    color: #1e1613;
+    font-family: 'antonioregular';
+    text-transform: uppercase;
+    margin: 0;
+    padding: 50px;
+}
+
+#kidneysModal .more-about-kidneys {
+    padding-bottom: 50px;
+}
+
+#kidneysModal .more-about-kidneys .what-kidneys-do {
+    padding-top: 50px;
+}
+
+#kidneysModal .more-about-kidneys .what-kidneys-do .padding-gap {
+    padding-top: 55px;
+}
+
+#kidneysModal .too-much-protein {
+    padding: 0px;
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    fill: #F0F0EC;
+}
+
+.what-kidneys-do .too-much-protein{
+    padding-top: 20px;
+}
+
+/* results */
+#resultsModal .modal-body, .modal-header{
+    background-color: #e8e4c9;
+}
+
+#resultsModal .you{
+    text-align: center;
+}
+
+#resultsModal p{
+    color: #1e1613;
+    text-transform: uppercase;
+    font-family: 'pt_sansbold';
+    font-size: xx-large;
+    background: #e8e4c9;
+}
+
+#resultsModal h1{
+    font-size: 55px;
+    letter-spacing: 1.5px;
+    font-family: 'antonioregular';
+    text-transform: uppercase;
+    line-height: 85px;
+    color: #0C5B5B;
+    padding-top: 10px;
+}
+
+#resultsModal .modal-header{
+    background: #e8e4c9;
+}
+
+#resultsModal .title-padding{
+    padding-top: 20px;
+}
+
+#resultsModal .text-center{
+    margin-top: 45px;
+}
+
+#resultsModal .some-options{
+    padding-top: 30px;
+    margin-bottom: 80px;
+    margin-top: 45px;
+}
+
+/* Customize the placeholder style */
+#albumin-form::placeholder {
+    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
+    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+}
+
+#bloodurea-form::placeholder {
+    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
+    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+}
+
+#serumcreatinine-form::placeholder {
+    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
+    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+}
+
+#sodium-form::placeholder {
+    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
+    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+}
+
+#potassium-form::placeholder {
+    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
+    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+}
+
+#calcium-form::placeholder {
+    color: #999; /* Set the placeholder color to a lighter shade, adjust as needed */
+    opacity: 0.8; /* Set the opacity to make it lighter, adjust as needed */
+}
+
+/* desktop version only */
+@media(min-width: 1399.98px){
+    .container{
+        width: 84%;
+    }
+ }
+
+ /* mobile version only */
+ @media(max-width: 576px){
+    /* navbar */
+    .navbar{
+        padding: 28px 0;
+    }
+
+    /* ckd */
+    section.CKD{
+        margin: 2rem 0;
+        text-align: center;
+    }
+
+    section.CKD img{
+        margin: 2rem 0;
+    }
+
+    .orange-button {
+        padding: 7px 40px; /* Adjust padding for smaller screens */
+        font-size: 14px; /* Adjust font size for smaller screens */
+        height: 40px; /* Adjust height for smaller screens */
+    }
+
+    section#causes{
+        padding: 80px;
+    }
+
+    section#causes h1{
+        font-size: 40px;
+        padding-top: 50px;
+        height: 80px;
+        margin-bottom: 30px;
+    }
+
+    section#causes .row p{
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+
+    section#causes img {
+        margin-bottom: 10px;
+    }
+
+}
+
+    /* tablet small version only */
+@media(max-width: 768px){
+     /* navbar */
+    .navbar{
+         padding: 28px 0;
+     }
+
+    /* ckd */
+
+    section.CKD{
+        margin: 1rem 0;
+    }
+
+    section.CKD img{
+        margin: 2rem 0;
+    }
+
+    section#causes {
+        padding: 80px; 
+    }
+
+    section#causes h1 {
+        font-size: 35px; 
+    }
+
+    section#causes .row p {
+        font-size: 12px; 
+    }
+}
+
+/* tablet medium version only */
+@media(max-width: 992px){
+    .navbar{
+        padding: 28px 0;
+    }
+
+    /* ckd */
+
+    section.CKD{
+        margin: 1rem 0;
+    }
+    
+    section.CKD img{
+        margin: 2rem 0;
+    }
+
+    section#causes {
+        padding: 100px; 
+    }
+
+    section#causes h1 {
+        font-size: 40px; 
+    }
+
+    section#causes .row p {
+        font-size: 14px; 
+
+    }
+}
