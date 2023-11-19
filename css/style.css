@@ -301,6 +301,22 @@ section#causes .row p {
     margin: 0;
 }
 
+form .input-field{
+    display: flex;
+    width: calc(100% / 2 - 20px);
+    flex-direction: column;
+    margin: 4px 0;
+    padding-bottom: 20px;
+}
+
+form .fields{
+    display: flex;
+    padding-bottom: 20px;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
 #risk-calculator-form select, #risk-calculator-form input {
     height: 50px;
 }
@@ -493,6 +509,15 @@ section#causes .row p {
 
     /* tablet small version only */
 @media(max-width: 768px){
+
+    form .fields{
+        width: calc(100% / 3 - 20px);
+    }
+
+    form .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+
      /* navbar */
     .navbar{
          padding: 28px 0;
@@ -548,5 +573,12 @@ section#causes .row p {
     section#causes .row p {
         font-size: 14px; 
 
+    }
+}
+
+@media (max-width: 550px){
+    
+    form .fields, form .input-field{
+        width: 100%;
     }
 }
