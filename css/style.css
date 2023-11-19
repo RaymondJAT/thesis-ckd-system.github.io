@@ -312,9 +312,42 @@ form .input-field{
 form .fields{
     display: flex;
     padding-bottom: 20px;
-    width: calc(100% / 3 - 15px);
+    width: calc(100% / 3 - 13px);
     flex-direction: column;
     margin: 4px 0;
+}
+
+.question-circle {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #0C5B5B; /* Change the background color as needed */
+    color: #e8e4c9;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    cursor: pointer;
+    margin-left: 535px;
+    transform: translateY(-150%);
+    position: absolute;
+    /* border: 2px solid #0C5B5B; */
+}
+
+.quest-circle{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background-color: #0C5B5B; /* Change the background color as needed */
+    color: #e8e4c9;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25px;
+    cursor: pointer;
+    margin-left: 340px;
+    transform: translateY(-150%);
+    position: absolute;
 }
 
 #risk-calculator-form select, #risk-calculator-form input {
@@ -580,5 +613,217 @@ form .fields{
     
     form .fields, form .input-field{
         width: 100%;
+    }
+}
+
+/* Styles for question-circle */
+.question-circle {
+    margin-left: 510px;
+}
+
+/* Styles for quest-circle */
+.quest-circle {
+    margin-left: 290px;
+}
+
+/* Media queries for responsive design */
+@media (max-width: 1495px) {
+    .question-circle {
+        margin-left: 500px; /* Adjust as needed */
+    }
+
+    .quest-circle {
+        margin-left: 285px; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 1490px) {
+    .question-circle {
+        margin-left: 490px; /* Adjust as needed */
+    }
+
+    .quest-circle {
+        margin-left: 275px; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 1450px) {
+    .question-circle {
+        margin-left: 480px; /* Adjust as needed */
+    }
+
+    .quest-circle {
+        margin-left: 265px; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 1420.98px) {
+    .question-circle {
+        margin-left: 470px; /* Adjust as needed */
+    }
+
+    .quest-circle {
+        margin-left: 255px; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 1410px) {
+    .question-circle {
+        margin-left: 460px; /* Adjust as needed */
+    }
+
+    .quest-circle {
+        margin-left: 255px; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 1200px) {
+    .question-circle {
+        margin-left: 370px; /* Adjust as needed */
+    }
+
+    .quest-circle {
+        margin-left: 195px; /* Adjust as needed */
+    }
+}
+
+@media (max-width: 992px) {
+    .question-circle {
+        margin-left: 250px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 115px;
+    }
+}
+
+@media (max-width: 776px) {
+    .question-circle {
+        margin-left: 165px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 50px;
+    }
+}
+
+
+@media (max-width: 552px) {
+    .question-circle {
+        margin-left: 155px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 40px;
+    }
+}
+
+@media (max-width: 550px) {
+    .question-circle {
+        margin-left: 405px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 380px;
+    }
+}
+
+@media (max-width: 545px) {
+    .question-circle {
+        margin-left: 395px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 370px;
+    }
+}
+
+@media (max-width: 515px) {
+    .question-circle {
+        margin-left: 370px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 345px;
+    }
+}
+
+@media (max-width: 490px) {
+    .question-circle {
+        margin-left: 345px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 320px;
+    }
+}
+
+@media (max-width: 470px) {
+    .question-circle {
+        margin-left: 325px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 300px;
+    }
+}
+
+@media (max-width: 463px) {
+    .question-circle {
+        margin-left: 315px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 290px;
+    }
+}
+
+@media (max-width: 445px) {
+    .question-circle {
+        margin-left: 300px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 275px;
+    }
+}
+
+@media (max-width: 415px) {
+    .question-circle {
+        margin-left: 270px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 240px;
+    }
+}
+
+@media (max-width: 385px) {
+    .question-circle {
+        margin-left: 240px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 215px;
+    }
+}
+
+@media (max-width: 355px) {
+    .question-circle {
+        margin-left: 205px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 180px;
+    }
+}
+
+@media (max-width: 319px) {
+    .question-circle {
+        margin-left: 170px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 145px;
     }
 }
