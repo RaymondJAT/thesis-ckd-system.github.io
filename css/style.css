@@ -748,6 +748,16 @@ form .fields{
     }
 }
 
+@media (max-width: 500px) {
+    .question-circle {
+        margin-left: 330px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 305px;
+    }
+}
+
 @media (max-width: 490px) {
     .question-circle {
         margin-left: 345px; /* Adjust as needed */
@@ -785,6 +795,16 @@ form .fields{
 
     .quest-circle{
         margin-left: 275px;
+    }
+}
+
+@media (max-width: 420px) {
+    .question-circle {
+        margin-left: 275px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 250px;
     }
 }
 
