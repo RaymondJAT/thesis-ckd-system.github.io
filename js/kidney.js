@@ -85,6 +85,17 @@ document.addEventListener('DOMContentLoaded', function(){
                 isValid = false;
                 input.classList.add('is-invalid');
                 input.setCustomValidity('Please enter a valid number.');
+            } else if (input.id === 'age-form') {
+                const ageValue = parseInt(inputValue, 10);
+    
+                if (/^0\d*$/.test(inputValue) || isNaN(ageValue) || ageValue <= 0 || ageValue >= 121) {
+                    isValid = false;
+                    input.classList.add('is-invalid');
+                    input.setCustomValidity('Age must be between 1 and 120 without leading zeros.');
+                } else {
+                    input.classList.remove('is-invalid');
+                    input.setCustomValidity('');
+                }
             } else {
                 input.classList.remove('is-invalid');
                 input.setCustomValidity('');
