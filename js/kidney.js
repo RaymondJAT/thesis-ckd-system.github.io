@@ -141,6 +141,11 @@ document.addEventListener('DOMContentLoaded', function(){
         }
     });
 
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]');
+    tooltipTriggerList.forEach(function (tooltipTriggerEl) {
+        new bootstrap.Tooltip(tooltipTriggerEl);
+    });
+
     calculatorModal._element.addEventListener('hidden.bs.modal', function () {
         const form = document.getElementById('risk-calculator-form');
         form.reset();
