@@ -798,6 +798,16 @@ form .fields{
     }
 }
 
+@media (max-width: 425px) {
+    .question-circle {
+        margin-left: 280px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 255px;
+    }
+}
+
 @media (max-width: 420px) {
     .question-circle {
         margin-left: 275px; /* Adjust as needed */
@@ -818,6 +828,16 @@ form .fields{
     }
 }
 
+@media (max-width: 395px) {
+    .question-circle {
+        margin-left: 245px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 215px;
+    }
+}
+
 @media (max-width: 385px) {
     .question-circle {
         margin-left: 240px; /* Adjust as needed */
@@ -825,6 +845,16 @@ form .fields{
 
     .quest-circle{
         margin-left: 215px;
+    }
+}
+
+@media (max-width: 360px) {
+    .question-circle {
+        margin-left: 215px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 190px;
     }
 }
 
@@ -837,6 +867,17 @@ form .fields{
         margin-left: 180px;
     }
 }
+
+@media (max-width: 326px) {
+    .question-circle {
+        margin-left: 180px; /* Adjust as needed */
+    }
+
+    .quest-circle{
+        margin-left: 155px;
+    }
+}
+
 
 @media (max-width: 319px) {
     .question-circle {
