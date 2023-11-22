@@ -85,6 +85,17 @@ document.addEventListener('DOMContentLoaded', function(){
                 isValid = false;
                 input.classList.add('is-invalid');
                 input.setCustomValidity('Please enter a valid number.');
+            } else if (['albumin-form', 'bloodurea-form', 'serumcreatinine-form', 'sodium-form', 'potassium-form', 'calcium-form'].includes(input.id)) {
+                const numericValue = parseFloat(inputValue);
+    
+                if (numericValue <= 0 || isNaN(numericValue)) {
+                    isValid = false;
+                    input.classList.add('is-invalid');
+                    input.setCustomValidity(`${input.id.charAt(0).toUpperCase() + input.id.slice(1)} must be a positive number.`);
+                } else {
+                    input.classList.remove('is-invalid');
+                    input.setCustomValidity('');
+                }
             } else if (input.id === 'age-form') {
                 const ageValue = parseInt(inputValue, 10);
     
