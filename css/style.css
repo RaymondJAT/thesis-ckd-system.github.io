@@ -768,7 +768,7 @@ form .fields{
     }
 }
 
-@media (max-width: 470px) {
+@media (max-width: 472px) {
     .question-circle {
         margin-left: 325px; /* Adjust as needed */
     }
@@ -848,7 +848,7 @@ form .fields{
     }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 362px) {
     .question-circle {
         margin-left: 215px; /* Adjust as needed */
     }
@@ -868,9 +868,9 @@ form .fields{
     }
 }
 
-@media (max-width: 326px) {
+@media (max-width: 330px) {
     .question-circle {
-        margin-left: 180px; /* Adjust as needed */
+        margin-left: 185px; /* Adjust as needed */
     }
 
     .quest-circle{
