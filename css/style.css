@@ -695,15 +695,23 @@ form .fields{
     .quest-circle{
         margin-left: 115px;
     }
+
+    ::placeholder {
+        font-size: 14px; /* Adjusted font size for smaller screens */
+    }
 }
 
-@media (max-width: 776px) {
+@media (max-width: 767px) {
     .question-circle {
         margin-left: 165px; /* Adjust as needed */
     }
 
     .quest-circle{
         margin-left: 50px;
+    }
+
+    ::placeholder {
+        font-size: 10px; /* Adjusted font size for smaller screens */
     }
 }
 
@@ -716,6 +724,10 @@ form .fields{
     .quest-circle{
         margin-left: 40px;
     }
+
+    ::placeholder {
+        font-size: 8px; /* Adjusted font size for smaller screens */
+    }
 }
 
 @media (max-width: 550px) {
@@ -725,6 +737,10 @@ form .fields{
 
     .quest-circle{
         margin-left: 380px;
+    }
+
+    ::placeholder {
+        font-size: 16px; /* Adjusted font size for smaller screens */
     }
 }
 
@@ -836,6 +852,10 @@ form .fields{
     .quest-circle{
         margin-left: 215px;
     }
+
+    ::placeholder {
+        font-size: 12px; /* Adjusted font size for smaller screens */
+    }
 }
 
 @media (max-width: 385px) {
@@ -876,6 +896,10 @@ form .fields{
     .quest-circle{
         margin-left: 155px;
     }
+
+    ::placeholder {
+        font-size: 10px; /* Adjusted font size for smaller screens */
+    }
 }
 
 
@@ -888,3 +912,4 @@ form .fields{
         margin-left: 145px;
     }
 }
+
