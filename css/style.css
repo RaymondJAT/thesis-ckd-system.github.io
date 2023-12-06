@@ -22,6 +22,11 @@
     font-style: normal
 }
 
+@font-face{
+    font-family: myFont;
+    src: url(../fonts/Super\ Comic.otf);
+}
+
 *{
     margin: 0;
     padding: 0;
@@ -44,6 +49,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 	color: #fff !important;
 }
 .nav-item a{
+    font-family: 'antonioregular';
 	color: #fff !important;
     margin-left: 60px;
     font-size: 15px;
@@ -105,7 +111,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
 	padding-top: 20px;
 	text-align: center;
     text-transform: uppercase;
-    font-family: 'antonioregular';
+    font-family: 'myFont';
 }
 
 #banner-row h3{
@@ -113,7 +119,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     padding-bottom: 20px;
 	text-align: center;
     text-transform: uppercase;
-    font-family: 'antonioregular';
+    font-family: 'myFont';
 }
 
 #banner-col{
@@ -130,6 +136,7 @@ section#stages{
 }
 
 section#stages p {
+    font-family: 'antonioregular';
     font-size: 18px;
     line-height: 24px;
     margin-top: 40px;
@@ -142,7 +149,7 @@ section#stages h1 .smaller{
 }
 
 section#stages h1 {
-    font-family: 'antonioregular';
+    font-family: 'myFont';
     font-size: 46px;
     text-transform: uppercase;
     line-height: 50px;
@@ -152,6 +159,7 @@ section#stages h1 {
 }
 
 section#stages h1 .smaller {
+    font-family: 'myFont';
     font-size: 25px
 }
 
@@ -179,28 +187,6 @@ section#stages .row.stages-gfr {
     margin: 0;
 }
 
-/* footer */
-footer{
-    font-family: 'antonioregular';
-    text-transform: uppercase;
-    background: #1e1613;
-    position: relative;
-    margin-top: -70px;
-    padding-top: 70px;
-    padding-bottom: 40px;
-    color: #fff;
-}
-
-footer p{
-    font-size: 20px;
-    letter-spacing: 2.5px;
-}
-
-#footer h1{
-    font-size:50px;
-    letter-spacing: 1.5px;
-}
-
 /* causes */
 section#causes p, 
 section#causes img{
@@ -215,7 +201,7 @@ section#causes{
 
 section#causes h1 {
     text-transform: uppercase;
-    font-family: 'antonioregular';
+    font-family: 'myFont';
     font-size: 55px;
     letter-spacing: 3.2px;
     margin: 0;
@@ -232,9 +218,32 @@ section#causes h1 {
 }
 
 section#causes .row p {
+    font-family: 'antonioregular';
     font-size: 18px;
     line-height: 24px;
     color: #1e1613
+}
+
+/* footer */
+footer{
+    font-family: 'myFont';
+    text-transform: uppercase;
+    background: #1e1613;
+    position: relative;
+    margin-top: -70px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    color: #fff;
+}
+
+footer p{
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+#footer h1{
+    font-size:40px;
+    letter-spacing: 1.5px;
 }
 
 .btn-close{
@@ -376,6 +385,25 @@ form .fields{
     border-radius: 10px;
 }
 
+.video-container {
+    position: relative;
+    padding-bottom: 40%; /* Adjust the percentage as needed */
+    height: 0;
+    margin: auto;
+    display: block;
+  }
+
+  .video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 65%; /* Adjust the percentage as needed */
+    height: auto; /* Maintain aspect ratio */
+    border: 2px solid #ccc; /* Add border to the video */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow to the video */
+  }
+
 #kidneysModal .modal-body, .modal-header{
     background: #e8e4c9;
 }
@@ -383,7 +411,7 @@ form .fields{
 #kidneysModal h1 {
     font-size: 61px;
     color: #1e1613;
-    font-family: 'antonioregular';
+    font-family: 'myFont';
     text-transform: uppercase;
     margin: 0;
     padding: 50px;
@@ -406,6 +434,12 @@ form .fields{
     padding-bottom: 50px;
     margin-bottom: 50px;
     fill: #F0F0EC;
+}
+
+#kidneysModal .too-much-protein p{
+    font-family: 'myFont';
+    text-align: center;
+    letter-spacing: 1px;
 }
 
 .what-kidneys-do .too-much-protein{
@@ -678,6 +712,11 @@ form .fields{
 }
 
 @media (max-width: 1200px) {
+
+    #kidneysModal h1 {
+        font-size: 56px;
+    }
+
     .question-circle {
         margin-left: 370px; /* Adjust as needed */
     }
@@ -688,6 +727,10 @@ form .fields{
 }
 
 @media (max-width: 992px) {
+
+    #kidneysModal h1 {
+        font-size: 50px;
+    }
 
     #banner-row h1{
         padding-left: 20px;
@@ -817,6 +860,11 @@ form .fields{
 }
 
 @media (max-width: 545px) {
+
+    #kidneysModal h1 {
+        font-size: 45px;
+    }
+
     .question-circle {
         margin-left: 395px; /* Adjust as needed */
     }
@@ -847,6 +895,11 @@ form .fields{
 }
 
 @media (max-width: 490px) {
+
+    #kidneysModal h1 {
+        font-size: 40px;
+    }
+
     .question-circle {
         margin-left: 345px; /* Adjust as needed */
     }
@@ -875,6 +928,12 @@ form .fields{
 
     .quest-circle{
         margin-left: 290px;
+    }
+}
+
+@media (max-width: 450px) {
+    #kidneysModal h1 {
+        font-size: 35px;
     }
 }
 
