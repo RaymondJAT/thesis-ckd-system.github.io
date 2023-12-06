@@ -193,4 +193,13 @@ document.addEventListener('DOMContentLoaded', function(){
             this.classList.remove('is-invalid');
         });
     });
+
+    const kidneyModalCloseButton = document.querySelector('#kidneysModal [data-bs-dismiss="modal"]');
+kidneyModalCloseButton.addEventListener('click', function () {
+    const video = document.getElementById('educVideo');
+    if (video) {
+        video.pause();
+        video.currentTime = 0; // Reset the video to the beginning
+    }
+});
 });
