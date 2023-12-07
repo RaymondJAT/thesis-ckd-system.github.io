@@ -97,9 +97,9 @@ document.addEventListener('DOMContentLoaded', function(){
                     input.setCustomValidity('');
                 }
             } else if (input.id === 'age-form') {
-                const ageValue = parseInt(inputValue, 10);
+                const ageValue = parseFloat(inputValue, 10);
     
-                if (/^0\d*$/.test(inputValue) || isNaN(ageValue) || ageValue <= 0 || ageValue >= 121) {
+                if (/^0\d*$/.test(inputValue) || isNaN(ageValue) || ageValue <= 0 || ageValue >= 121 || ageValue % 1 !== 0) {
                     isValid = false;
                     input.classList.add('is-invalid');
                     input.setCustomValidity('Age must be between 1 and 120 without leading zeros.');
@@ -194,12 +194,17 @@ document.addEventListener('DOMContentLoaded', function(){
         });
     });
 
-    const kidneyModalCloseButton = document.querySelector('#kidneysModal [data-bs-dismiss="modal"]');
-kidneyModalCloseButton.addEventListener('click', function () {
-    const video = document.getElementById('educVideo');
-    if (video) {
-        video.pause();
-        video.currentTime = 0; // Reset the video to the beginning
+    closeModalAndResetVideo('kidneysModal', 'educVideo');
+    closeModalAndResetVideo('resultsModal', 'resultVideo');
+
+    function closeModalAndResetVideo(modalId, videoId) {
+        const modalCloseButton = document.querySelector(`#${modalId} [data-bs-dismiss="modal"]`);
+        modalCloseButton.addEventListener('click', function () {
+            const video = document.getElementById(videoId);
+            if (video) {
+                video.pause();
+                video.currentTime = 0; // Reset the video to the beginning
+            }
+        });
     }
-});
 });

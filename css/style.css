@@ -54,6 +54,7 @@ background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/s
     margin-left: 60px;
     font-size: 15px;
     font-weight: 600;
+    letter-spacing: 1.5px;
     border-bottom: 2px solid transparent;
     transition: all .55s ease;
 }
@@ -331,7 +332,7 @@ form .fields{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #0C5B5B; /* Change the background color as needed */
+    background-color: #0C5B5B; 
     color: #e8e4c9;
     text-align: center;
     font-size: 15px;
@@ -348,7 +349,7 @@ form .fields{
     width: 25px;
     height: 25px;
     border-radius: 50%;
-    background-color: #0C5B5B; /* Change the background color as needed */
+    background-color: #0C5B5B; 
     color: #e8e4c9;
     text-align: center;
     font-size: 15px;
@@ -387,21 +388,22 @@ form .fields{
 
 .video-container {
     position: relative;
-    padding-bottom: 40%; /* Adjust the percentage as needed */
+    padding-bottom: 40%; 
     height: 0;
     margin: auto;
+    margin-bottom: 50px;
     display: block;
   }
 
-  .video-container video {
+.video-container video {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 65%; /* Adjust the percentage as needed */
-    height: auto; /* Maintain aspect ratio */
-    border: 2px solid #ccc; /* Add border to the video */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add box shadow to the video */
+    width: 65%; 
+    height: auto; 
+    border: 2px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
   }
 
 #kidneysModal .modal-body, .modal-header{
@@ -458,7 +460,7 @@ form .fields{
 #resultsModal p{
     color: #1e1613;
     text-transform: uppercase;
-    font-family: 'pt_sansbold';
+    font-family: 'myFont';
     font-size: xx-large;
     background: #e8e4c9;
 }
@@ -466,7 +468,7 @@ form .fields{
 #resultsModal h1{
     font-size: 55px;
     letter-spacing: 1.5px;
-    font-family: 'antonioregular';
+    font-family: 'myFont';
     text-transform: uppercase;
     line-height: 85px;
     color: #0C5B5B;
@@ -490,6 +492,31 @@ form .fields{
     margin-bottom: 80px;
     margin-top: 5px;
 }
+
+#resultsModal .chronic-kidney-disease p{
+    text-align: center;
+    font-family: 'myFont';
+    font-size: 20px;
+}
+
+#resultsModal #signs-and-symptoms .video-container {
+    position: relative;
+    padding-bottom: 30%; 
+    height: 0;
+    margin: auto;
+    display: block;
+  }
+
+#resultsModal #signs-and-symptoms .video-container video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%; 
+    height: auto; 
+    border: 2px solid #ccc; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+  }
 
 /* Customize the placeholder style */
 #albumin-form::placeholder {
@@ -663,51 +690,51 @@ form .fields{
 /* Media queries for responsive design */
 @media (max-width: 1495px) {
     .question-circle {
-        margin-left: 500px; /* Adjust as needed */
+        margin-left: 500px; 
     }
 
     .quest-circle {
-        margin-left: 285px; /* Adjust as needed */
+        margin-left: 285px; 
     }
 }
 
 @media (max-width: 1490px) {
     .question-circle {
-        margin-left: 490px; /* Adjust as needed */
+        margin-left: 490px; 
     }
 
     .quest-circle {
-        margin-left: 275px; /* Adjust as needed */
+        margin-left: 275px; 
     }
 }
 
 @media (max-width: 1450px) {
     .question-circle {
-        margin-left: 480px; /* Adjust as needed */
+        margin-left: 480px; 
     }
 
     .quest-circle {
-        margin-left: 265px; /* Adjust as needed */
+        margin-left: 265px; 
     }
 }
 
 @media (max-width: 1420.98px) {
     .question-circle {
-        margin-left: 470px; /* Adjust as needed */
+        margin-left: 470px; 
     }
 
     .quest-circle {
-        margin-left: 255px; /* Adjust as needed */
+        margin-left: 255px; 
     }
 }
 
 @media (max-width: 1410px) {
     .question-circle {
-        margin-left: 460px; /* Adjust as needed */
+        margin-left: 460px; 
     }
 
     .quest-circle {
-        margin-left: 255px; /* Adjust as needed */
+        margin-left: 255px; 
     }
 }
 
@@ -718,11 +745,11 @@ form .fields{
     }
 
     .question-circle {
-        margin-left: 370px; /* Adjust as needed */
+        margin-left: 370px; 
     }
 
     .quest-circle {
-        margin-left: 195px; /* Adjust as needed */
+        margin-left: 195px; 
     }
 }
 
@@ -751,7 +778,7 @@ form .fields{
     }
 
     .question-circle {
-        margin-left: 250px; /* Adjust as needed */
+        margin-left: 250px; 
     }
 
     .quest-circle{
@@ -759,7 +786,7 @@ form .fields{
     }
 
     ::placeholder {
-        font-size: 14px; /* Adjusted font size for smaller screens */
+        font-size: 14px; 
     }
 }
 
@@ -786,7 +813,7 @@ form .fields{
     }
 
     .question-circle {
-        margin-left: 165px; /* Adjust as needed */
+        margin-left: 165px; 
     }
 
     .quest-circle{
@@ -794,7 +821,7 @@ form .fields{
     }
 
     ::placeholder {
-        font-size: 10px; /* Adjusted font size for smaller screens */
+        font-size: 10px;
     }
 }
 
@@ -833,7 +860,7 @@ form .fields{
 
 
     .question-circle {
-        margin-left: 155px; /* Adjust as needed */
+        margin-left: 155px; 
     }
 
     .quest-circle{
@@ -841,13 +868,13 @@ form .fields{
     }
 
     ::placeholder {
-        font-size: 8px; /* Adjusted font size for smaller screens */
+        font-size: 8px; 
     }
 }
 
 @media (max-width: 550px) {
     .question-circle {
-        margin-left: 405px; /* Adjust as needed */
+        margin-left: 405px; 
     }
 
     .quest-circle{
@@ -855,7 +882,7 @@ form .fields{
     }
 
     ::placeholder {
-        font-size: 16px; /* Adjusted font size for smaller screens */
+        font-size: 16px; 
     }
 }
 
@@ -866,7 +893,7 @@ form .fields{
     }
 
     .question-circle {
-        margin-left: 395px; /* Adjust as needed */
+        margin-left: 395px; 
     }
 
     .quest-circle{
@@ -876,7 +903,7 @@ form .fields{
 
 @media (max-width: 515px) {
     .question-circle {
-        margin-left: 370px; /* Adjust as needed */
+        margin-left: 370px; 
     }
 
     .quest-circle{
@@ -886,7 +913,7 @@ form .fields{
 
 @media (max-width: 500px) {
     .question-circle {
-        margin-left: 330px; /* Adjust as needed */
+        margin-left: 330px; 
     }
 
     .quest-circle{
@@ -901,7 +928,7 @@ form .fields{
     }
 
     .question-circle {
-        margin-left: 345px; /* Adjust as needed */
+        margin-left: 345px; 
     }
 
     .quest-circle{
@@ -911,7 +938,7 @@ form .fields{
 
 @media (max-width: 472px) {
     .question-circle {
-        margin-left: 325px; /* Adjust as needed */
+        margin-left: 325px; 
     }
 
     .quest-circle{
@@ -923,7 +950,7 @@ form .fields{
 
     
     .question-circle {
-        margin-left: 315px; /* Adjust as needed */
+        margin-left: 315px; 
     }
 
     .quest-circle{
@@ -939,7 +966,7 @@ form .fields{
 
 @media (max-width: 445px) {
     .question-circle {
-        margin-left: 300px; /* Adjust as needed */
+        margin-left: 300px; 
     }
 
     .quest-circle{
@@ -949,7 +976,7 @@ form .fields{
 
 @media (max-width: 425px) {
     .question-circle {
-        margin-left: 280px; /* Adjust as needed */
+        margin-left: 280px; 
     }
 
     .quest-circle{
@@ -959,7 +986,7 @@ form .fields{
 
 @media (max-width: 420px) {
     .question-circle {
-        margin-left: 275px; /* Adjust as needed */
+        margin-left: 275px; 
     }
 
     .quest-circle{
@@ -969,7 +996,7 @@ form .fields{
 
 @media (max-width: 415px) {
     .question-circle {
-        margin-left: 270px; /* Adjust as needed */
+        margin-left: 270px; 
     }
 
     .quest-circle{
@@ -979,7 +1006,7 @@ form .fields{
 
 @media (max-width: 395px) {
     .question-circle {
-        margin-left: 245px; /* Adjust as needed */
+        margin-left: 245px; 
     }
 
     .quest-circle{
@@ -987,13 +1014,13 @@ form .fields{
     }
 
     ::placeholder {
-        font-size: 12px; /* Adjusted font size for smaller screens */
+        font-size: 12px; 
     }
 }
 
 @media (max-width: 385px) {
     .question-circle {
-        margin-left: 240px; /* Adjust as needed */
+        margin-left: 240px; 
     }
 
     .quest-circle{
@@ -1003,7 +1030,7 @@ form .fields{
 
 @media (max-width: 362px) {
     .question-circle {
-        margin-left: 215px; /* Adjust as needed */
+        margin-left: 215px; 
     }
 
     .quest-circle{
@@ -1030,7 +1057,7 @@ form .fields{
 
 
     .question-circle {
-        margin-left: 205px; /* Adjust as needed */
+        margin-left: 205px; 
     }
 
     .quest-circle{
@@ -1040,7 +1067,7 @@ form .fields{
 
 @media (max-width: 330px) {
     .question-circle {
-        margin-left: 185px; /* Adjust as needed */
+        margin-left: 185px; 
     }
 
     .quest-circle{
@@ -1048,14 +1075,14 @@ form .fields{
     }
 
     ::placeholder {
-        font-size: 10px; /* Adjusted font size for smaller screens */
+        font-size: 10px; 
     }
 }
 
 
 @media (max-width: 319px) {
     .question-circle {
-        margin-left: 170px; /* Adjust as needed */
+        margin-left: 170px; 
     }
 
     .quest-circle{
